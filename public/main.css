@@ -1,3 +1,34 @@
+.h1Header {
+  font-family: 'Trade Winds', cursive;
+  /* font-family: 'Permanent Marker', cursive; */
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px white, 2px 2px 2px gray;
+  margin: 1rem auto 1rem auto;
+}
+
+.otherText {
+  color: white;
+  text-shadow: 2px 2px 2px red;
+  font-family: 'Permanent Marker', cursive;
+}
+
 * {
-  background-color: green;
+  background-color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50px;
+}
+
+.item {
+  grid-column-start: 2;
+  grid-column-end: 10;
+}
+
+.item img {
+  width: 100%;
+  height: 50%;
+  margin: auto auto 3rem auto
 }
