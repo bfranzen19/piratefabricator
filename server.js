@@ -34,17 +34,17 @@ app.use(function(req,res,next) {
 
 /* deployment route code */
 try {
-  // var httpsConfig = {
-  //   key: fs.readFileSync('/etc/letsencrypt/live/40northography.com/privkey.pem'),
-  //   cert: fs.readFileSync('/etc/letsencrypt/live/40northography.com/cert.pem'),
-  // }
-  //
-  // var httpsServer = HTTPS.createServer(httpsConfig, app)
-  // httpsServer.listen(443)
+  var httpsConfig = {
+    key: fs.readFileSync('/etc/letsencrypt/live/piratefabricator.com/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/piratefabricator.com/cert.pem'),
+  }
+
+  var httpsServer = HTTPS.createServer(httpsConfig, app)
+  httpsServer.listen(443)
 
   var httpApp = express()
   httpApp.use(function(req,res,next) {
-    res.redirect('https://40northography.com' + req.url)
+    res.redirect('https://piratefabricator.com' + req.url)
   })
   httpApp.listen(80)
 }
