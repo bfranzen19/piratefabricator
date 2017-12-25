@@ -1,0 +1,27 @@
+{
+  "name": "piratefabricator",
+  "version": "1.0.0",
+  "description": "simple landing site for piratefabricator.com",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bfranzen19/piratefabricator.git"
+  },
+  "author": "bt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bfranzen19/piratefabricator/issues"
+  },
+  "homepage": "https://github.com/bfranzen19/piratefabricator#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "https": "^1.0.0"
+  }
+}
